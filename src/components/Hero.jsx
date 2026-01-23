@@ -7,7 +7,7 @@ const Hero = () => {
   };
 
   const stats = [
-    { icon: Star, value: '500+', label: 'Proyectos' },
+    { icon: Star, value: '500+', label: 'Instalaciones' },
     { icon: Shield, value: '15+', label: 'Años' },
     { icon: TrendingUp, value: '100%', label: 'Satisfacción' },
   ];
@@ -15,14 +15,14 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-16"
     >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop"
-          alt="Arquitectura moderna"
-          className="w-full h-full object-cover opacity-20"
+          src="/Imagenes/Proceso.webp"
+          alt="Proceso de instalación ESCOVIDRIO"
+          className="w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-light-bg via-blue-50/90 to-light-bg"></div>
       </div>
@@ -49,7 +49,7 @@ const Hero = () => {
             <span className="gradient-text">Vidrio & Aluminio</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-text-gray max-w-3xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg md:text-xl text-text-black max-w-3xl mx-auto mb-10 leading-relaxed">
             Diseños modernos y fabricación de alta calidad en San Bernardo.
             Desde ventanas hasta proyectos comerciales completos.
           </p>

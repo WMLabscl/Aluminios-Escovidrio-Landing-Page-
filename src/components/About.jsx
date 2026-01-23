@@ -87,8 +87,8 @@ const About = () => {
           >
             <div className="glass-card p-4 overflow-visible relative">
               <img
-                src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=2073&auto=format&fit=crop"
-                alt="Equipo ESCOVIDRIO"
+                src="/Imagenes/Cierre de negocio.webp"
+                alt="Cierre de negocio ESCOVIDRIO"
                 className="w-full h-[500px] object-cover rounded-xl"
               />
               {/* Floating Badge */}
@@ -96,7 +96,7 @@ const About = () => {
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: 0.5, type: 'spring' }}
+                transition={{ delay: 0.5 , type: 'spring' }}
                 className="absolute bottom-4 left-4 md:bottom-8 md:left-8 glass-card p-6 border-primary/50 shadow-xl z-10"
               >
                 <div className="text-4xl font-bold text-primary">15+</div>

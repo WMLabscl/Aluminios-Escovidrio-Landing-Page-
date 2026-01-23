@@ -7,6 +7,7 @@ import {
   Layers,
   Frame,
 } from 'lucide-react';
+import WindowCard from './WindowCard';
 
 const Services = () => {
   const services = [
@@ -107,43 +108,24 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`group relative glass-card p-6 hover:scale-[1.02] cursor-pointer overflow-hidden ${
-                service.featured ? 'md:col-span-2 lg:col-span-1 lg:row-span-2' : ''
-              }`}
+              className={service.featured ? 'md:col-span-2 lg:col-span-1 lg:row-span-2' : ''}
             >
-              {/* Background Image */}
-              <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              {/* Content */}
-              <div className="relative z-10">
-                {/* Icon */}
-                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
-                  <service.icon className="w-8 h-8 text-primary" />
+              <WindowCard title={service.title}>
+                {/* Contenido que se revela al abrir la ventana */}
+                <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mb-6">
+                  <service.icon className="w-10 h-10 text-primary" />
                 </div>
-
-                {/* Title & Description */}
-                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-gray-300 leading-relaxed mb-6">
+                <h4 className="text-2xl font-bold text-white mb-4">{service.title}</h4>
+                <p className="text-gray-300 text-base leading-relaxed mb-6">
                   {service.description}
                 </p>
-
-                {/* CTA Link */}
-                <div className="flex items-center text-primary font-semibold group-hover:gap-2 transition-all">
-                  <span>Más información</span>
-                  <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
-                </div>
-              </div>
-
-              {/* Hover Glow Effect */}
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary/30 rounded-2xl transition-all duration-300"></div>
+                <button 
+                  onClick={() => document.querySelector('#cotizar')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-primary text-sm font-bold hover:underline flex items-center gap-2 mx-auto"
+                >
+                  Solicitar Cotización →
+                </button>
+              </WindowCard>
             </motion.div>
           ))}
         </div>
