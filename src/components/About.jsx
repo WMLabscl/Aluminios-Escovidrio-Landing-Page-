@@ -44,7 +44,7 @@ const About = () => {
               <span className="gradient-text"> Vidrio & Aluminio</span>
             </h2>
             <p className="text-text-gray text-lg mb-6 leading-relaxed">
-              En <span className="text-white font-semibold">ESCOVIDRIO</span>, 
+              En <span className="text-blue font-semibold">ESCOVIDRIO</span>, 
               llevamos más de una década creando soluciones innovadoras que combinan 
               funcionalidad, diseño y durabilidad.
             </p>

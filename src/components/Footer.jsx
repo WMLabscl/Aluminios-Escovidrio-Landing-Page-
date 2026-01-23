@@ -40,12 +40,16 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-white border-t border-blue-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-12">
           {/* Brand Column */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-cyan-400 rounded-lg"></div>
+              <img 
+              src="/Imagenes/logo escovidrio solo ventana.webp" 
+              alt="Escovidrio Logo" 
+              className="w-12 h-12 object-contain"
+            />
               <div>
                 <span className="text-xl font-bold gradient-text block">ESCOVIDRIO</span>
                 <span className="text-xs text-text-gray">Vidrio & Aluminio</span>
@@ -102,7 +106,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="lg:col-span-2">
             <h3 className="text-white font-bold mb-4">Contacto</h3>
-            <div className="grid sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -130,12 +134,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-blue-200">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-text-gray text-sm">
+        <div className="pt-6 sm:pt-8 border-t border-blue-200">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4 text-center md:text-left">
+            <p className="text-text-gray text-xs sm:text-sm">
               © {currentYear} ESCOVIDRIO. Todos los derechos reservados.
             </p>
-            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-sm">
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 md:gap-6 text-xs sm:text-sm">
               <a href="#" className="text-text-gray hover:text-primary transition-colors">
                 Términos y Condiciones
               </a>
@@ -167,9 +171,9 @@ const Footer = () => {
         animate={{ scale: 1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="fixed bottom-6 right-6 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-glow-lg z-50 hover:bg-green-600 transition-colors"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 w-14 h-14 sm:w-16 sm:h-16 bg-green-500 rounded-full flex items-center justify-center shadow-glow-lg z-50 hover:bg-green-600 transition-colors"
       >
-        <Phone className="w-8 h-8 text-white" />
+        <Phone className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
       </motion.a>
     </footer>
   );

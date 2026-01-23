@@ -43,23 +43,23 @@ const Hero = () => {
             Soluciones Profesionales desde 2010
           </motion.span>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Transforma tus Espacios con
             <br />
             <span className="gradient-text">Vidrio & Aluminio</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-text-black max-w-3xl mx-auto mb-10 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-text-black max-w-3xl mx-auto mb-8 sm:mb-10 leading-relaxed px-4">
             Diseños modernos y fabricación de alta calidad en San Bernardo.
             Desde ventanas hasta proyectos comerciales completos.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-12 sm:mb-16 w-full px-4">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={scrollToCotizar}
-              className="btn-glow px-8 py-4 text-lg flex items-center gap-2"
+              className="btn-glow px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg flex items-center gap-2 w-full sm:w-auto justify-center"
             >
               Solicitar Cotización
               <ArrowRight className="w-5 h-5" />
@@ -69,7 +69,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="tel:+56953215308"
-              className="px-8 py-4 text-lg border-2 border-primary/30 rounded-full hover:border-primary hover:bg-primary/5 transition-all font-semibold text-text-dark"
+              className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg border-2 border-primary/30 rounded-full hover:border-primary hover:bg-primary/5 transition-all font-semibold text-text-dark w-full sm:w-auto text-center"
             >
               Llamar Ahora
             </motion.a>
@@ -80,13 +80,13 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="grid grid-cols-3 gap-8 max-w-2xl mx-auto"
+            className="grid grid-cols-3 gap-3 sm:gap-6 md:gap-8 max-w-2xl mx-auto px-2"
           >
             {stats.map((stat, index) => (
-              <div key={index} className="glass-card p-6 text-center">
-                <stat.icon className="w-8 h-8 mx-auto mb-3 text-primary" />
-                <div className="text-3xl font-bold mb-1">{stat.value}</div>
-                <div className="text-text-gray text-sm">{stat.label}</div>
+              <div key={index} className="glass-card p-3 sm:p-4 md:p-6 text-center">
+                <stat.icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 mx-auto mb-2 sm:mb-3 text-primary" />
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">{stat.value}</div>
+                <div className="text-text-gray text-xs sm:text-sm">{stat.label}</div>
               </div>
             ))}
           </motion.div>
