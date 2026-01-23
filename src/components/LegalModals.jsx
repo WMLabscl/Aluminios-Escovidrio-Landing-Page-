@@ -44,32 +44,32 @@ const LegalModals = ({ isTermsOpen, isPrivacyOpen, onCloseTerms, onClosePrivacy 
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="fixed inset-4 sm:inset-auto sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:max-w-3xl sm:w-full z-[101]"
+              className="fixed top-0 left-0 right-0 bottom-0 md:top-[5%] md:left-[5%] md:right-[5%] md:bottom-[5%] z-[101] flex items-center justify-center p-0 md:p-4"
             >
-              <div className="bg-slate-900/95 backdrop-blur-xl border border-slate-700 rounded-2xl shadow-2xl h-full sm:max-h-[85vh] overflow-hidden flex flex-col">
+              <div className="bg-slate-900/95 backdrop-blur-xl border-0 md:border border-slate-700 rounded-none md:rounded-2xl shadow-2xl w-full h-full max-h-full overflow-hidden flex flex-col">
                 {/* Header */}
-                <div className="flex items-center justify-between p-6 border-b border-slate-700">
+                <div className="flex items-center justify-between p-4 md:p-6 border-b border-slate-700 flex-shrink-0">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                      <FileText className="w-6 h-6 text-primary" />
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                      <FileText className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                     </div>
                     <div>
-                      <h2 className="text-2xl font-bold text-white">Términos y Condiciones</h2>
-                      <p className="text-gray-400 text-sm">ESCOVIDRIO - Vidrio & Aluminio</p>
+                      <h2 className="text-xl md:text-2xl font-bold text-white">Términos y Condiciones</h2>
+                      <p className="text-gray-400 text-xs md:text-sm">ESCOVIDRIO - Vidrio & Aluminio</p>
                     </div>
                   </div>
                   <button
                     onClick={onCloseTerms}
-                    className="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors"
+                    className="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors flex-shrink-0"
                   >
                     <X className="w-5 h-5 text-gray-300" />
                   </button>
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 overflow-y-auto p-6 space-y-6">
+                <div className="flex-1 overflow-y-auto p-4 md:p-6 space-y-4 md:space-y-6">
                   <div className="prose prose-invert max-w-none">
-                    <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-4 mb-6">
+                    <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-3 md:p-4 mb-4 md:mb-6">
                       <p className="text-gray-300 text-sm leading-relaxed">
                         Última actualización: Enero 2026. Al solicitar una cotización o contratar nuestros servicios, 
                         usted acepta los siguientes términos y condiciones.
@@ -168,10 +168,10 @@ const LegalModals = ({ isTermsOpen, isPrivacyOpen, onCloseTerms, onClosePrivacy 
                 </div>
 
                 {/* Footer */}
-                <div className="p-6 border-t border-slate-700 bg-slate-800/50">
+                <div className="p-4 md:p-6 border-t border-slate-700 bg-slate-800/50 flex-shrink-0">
                   <button
                     onClick={onCloseTerms}
-                    className="w-full btn-glow py-3 text-base font-semibold"
+                    className="w-full btn-glow py-2 md:py-3 text-sm md:text-base font-semibold"
                   >
                     Entendido
                   </button>
@@ -202,32 +202,32 @@ const LegalModals = ({ isTermsOpen, isPrivacyOpen, onCloseTerms, onClosePrivacy 
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="fixed inset-4 sm:inset-auto sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:max-w-2xl sm:w-full z-[101]"
+              className="fixed top-0 left-0 right-0 bottom-0 md:top-[5%] md:left-[5%] md:right-[5%] md:bottom-[5%] z-[101] flex items-center justify-center p-0 md:p-4"
             >
-              <div className="bg-slate-900/95 backdrop-blur-xl border border-slate-700 rounded-2xl shadow-2xl h-full sm:max-h-[85vh] overflow-hidden flex flex-col">
+              <div className="bg-slate-900/95 backdrop-blur-xl border-0 md:border border-slate-700 rounded-none md:rounded-2xl shadow-2xl w-full h-full max-h-full overflow-hidden flex flex-col">
                 {/* Header */}
-                <div className="flex items-center justify-between p-6 border-b border-slate-700">
+                <div className="flex items-center justify-between p-4 md:p-6 border-b border-slate-700 flex-shrink-0">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                      <Shield className="w-6 h-6 text-primary" />
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                      <Shield className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                     </div>
                     <div>
-                      <h2 className="text-2xl font-bold text-white">Política de Privacidad</h2>
-                      <p className="text-gray-400 text-sm">Protección de Datos Personales</p>
+                      <h2 className="text-xl md:text-2xl font-bold text-white">Política de Privacidad</h2>
+                      <p className="text-gray-400 text-xs md:text-sm">Protección de Datos Personales</p>
                     </div>
                   </div>
                   <button
                     onClick={onClosePrivacy}
-                    className="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors"
+                    className="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-colors flex-shrink-0"
                   >
                     <X className="w-5 h-5 text-gray-300" />
                   </button>
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 overflow-y-auto p-6 space-y-6">
+                <div className="flex-1 overflow-y-auto p-4 md:p-6 space-y-4 md:space-y-6">
                   <div className="prose prose-invert max-w-none">
-                    <div className="bg-blue-900/20 border border-blue-700/50 rounded-lg p-4 mb-6">
+                    <div className="bg-blue-900/20 border border-blue-700/50 rounded-lg p-3 md:p-4 mb-4 md:mb-6">
                       <p className="text-blue-200 text-sm leading-relaxed">
                         <strong>ESCOVIDRIO</strong> cumple con la <strong>Ley 19.628 sobre Protección de la Vida Privada</strong> 
                         de Chile y se compromete a proteger sus datos personales.
@@ -332,10 +332,10 @@ const LegalModals = ({ isTermsOpen, isPrivacyOpen, onCloseTerms, onClosePrivacy 
                 </div>
 
                 {/* Footer */}
-                <div className="p-6 border-t border-slate-700 bg-slate-800/50">
+                <div className="p-4 md:p-6 border-t border-slate-700 bg-slate-800/50 flex-shrink-0">
                   <button
                     onClick={onClosePrivacy}
-                    className="w-full btn-glow py-3 text-base font-semibold"
+                    className="w-full btn-glow py-2 md:py-3 text-sm md:text-base font-semibold"
                   >
                     Entendido
                   </button>

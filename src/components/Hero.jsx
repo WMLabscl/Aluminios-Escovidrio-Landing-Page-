@@ -22,9 +22,9 @@ const Hero = () => {
         <img
           src="/Imagenes/Proceso.webp"
           alt="Proceso de instalación ESCOVIDRIO"
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-light-bg via-blue-50/90 to-light-bg"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-light-bg/70 via-blue-50/50 to-light-bg/80"></div>
       </div>
 
       {/* Content */}
