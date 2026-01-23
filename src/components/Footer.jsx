@@ -1,8 +1,12 @@
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Facebook, Instagram, Clock } from 'lucide-react';
+import { useState } from 'react';
+import LegalModals from './LegalModals';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [isTermsOpen, setIsTermsOpen] = useState(false);
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
 
   const contactInfo = [
     {
@@ -140,12 +144,18 @@ const Footer = () => {
               © {currentYear} ESCOVIDRIO. Todos los derechos reservados.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 md:gap-6 text-xs sm:text-sm">
-              <a href="#" className="text-text-gray hover:text-primary transition-colors">
+              <button 
+                onClick={() => setIsTermsOpen(true)}
+                className="text-text-gray hover:text-primary transition-colors cursor-pointer"
+              >
                 Términos y Condiciones
-              </a>
-              <a href="#" className="text-text-gray hover:text-primary transition-colors">
+              </button>
+              <button 
+                onClick={() => setIsPrivacyOpen(true)}
+                className="text-text-gray hover:text-primary transition-colors cursor-pointer"
+              >
                 Política de Privacidad
-              </a>
+              </button>
               <p className="text-text-gray">
                 Desarrollado por{' '}
                 <a 
@@ -175,6 +185,14 @@ const Footer = () => {
       >
         <Phone className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
       </motion.a>
+
+      {/* Legal Modals */}
+      <LegalModals 
+        isTermsOpen={isTermsOpen}
+        isPrivacyOpen={isPrivacyOpen}
+        onCloseTerms={() => setIsTermsOpen(false)}
+        onClosePrivacy={() => setIsPrivacyOpen(false)}
+      />
     </footer>
   );
 };
