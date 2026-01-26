@@ -23,7 +23,6 @@ const getRandomImage = (imagesArray) => {
 // Mapeo de imágenes por carpeta
 const imagesByFolder = {
   corredera: [],
-  cristales: [],
   Espejo: [],
   estructura_aluminio: [
     '482814474_17999231708743444_6055099387735897776_n.jpg',
@@ -103,7 +102,7 @@ const Services = () => {
   const services = [
     {
       icon: Home,
-      title: 'Ventanas de Aluminio',
+      title: 'Ventanas',
       description: 'Ventanas modernas con excelente aislamiento térmico y acústico',
       folder: 'ventana'
     },
@@ -112,12 +111,6 @@ const Services = () => {
       title: 'Ventanas Correderas',
       description: 'Sistemas de ventanas correderas de alta calidad',
       folder: 'corredera'
-    },
-    {
-      icon: Layers,
-      title: 'Cristales',
-      description: 'Todo tipo de cristales y vidrios a medida',
-      folder: 'cristales'
     },
     {
       icon: Frame,
@@ -148,12 +141,6 @@ const Services = () => {
       title: 'Puertas Abatibles',
       description: 'Puertas de aluminio de apertura abatible',
       folder: 'puerta_abatir'
-    },
-    {
-      icon: Store,
-      title: 'Puertas Protex',
-      description: 'Puertas de seguridad de alta resistencia',
-      folder: 'puerta_protex'
     },
     {
       icon: Bath,
@@ -284,7 +271,7 @@ const Services = () => {
         </motion.div>
 
         {/* --- Bento Grid --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -292,7 +279,7 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="h-[400px]"
+              className="h-[200px] sm:h-[280px] md:h-[350px] lg:h-[400px]"
             >
 <WindowCard title={service.title} onClick={() => openGallery(service)}>
                 
@@ -318,14 +305,16 @@ const Services = () => {
                 <div className="absolute inset-0 bg-slate-900/70 group-hover:bg-slate-900/60 transition-colors duration-300"></div>
 
                 {/* 3. CONTENIDO (Icono y Texto) */}
-                <div className="relative z-10 flex flex-col items-center justify-center h-full text-center p-6">
-                  <div className="w-20 h-20 bg-primary/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-6 border border-primary/20 group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="w-10 h-10 text-primary" />
+                <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-2 py-3 sm:p-4 md:p-6">
+                  <div className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-primary/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-2 sm:mb-3 md:mb-4 lg:mb-6 border border-primary/20 group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 text-primary" />
                   </div>
                   
-                  <h4 className="text-2xl font-bold text-white mb-4 drop-shadow-md">{service.title}</h4>
+                  <h4 className="text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl font-bold text-white mb-1 sm:mb-2 md:mb-3 lg:mb-4 drop-shadow-md leading-tight">
+                    {service.title}
+                  </h4>
                   
-                  <p className="text-gray-200 text-base leading-relaxed mb-6 drop-shadow-sm max-w-xs mx-auto">
+                  <p className="hidden sm:block text-gray-200 text-xs md:text-sm lg:text-base leading-relaxed mb-2 md:mb-4 lg:mb-6 drop-shadow-sm max-w-xs mx-auto">
                     {service.description}
                   </p>
                   
@@ -334,11 +323,14 @@ const Services = () => {
                       e.stopPropagation();
                       openGallery(service);
                     }}
-                    className="text-primary text-sm font-bold hover:text-white hover:underline flex items-center gap-2 mx-auto transition-colors"
+                    className="text-primary text-[10px] sm:text-xs md:text-sm font-bold hover:text-white hover:underline flex items-center gap-1 mx-auto transition-colors"
                   >
                     {imagesByFolder[service.folder]?.length > 0 
-                      ? 'Ver Galería de Fotos →' 
-                      : 'Solicitar Cotización →'}
+                      ? <span className="hidden sm:inline">Ver Galería →</span>
+                      : <span className="hidden sm:inline">Cotizar →</span>}
+                    {imagesByFolder[service.folder]?.length > 0 
+                      ? <span className="sm:hidden">Ver →</span>
+                      : <span className="sm:hidden">Cotizar →</span>}
                   </button>
                 </div>
 
