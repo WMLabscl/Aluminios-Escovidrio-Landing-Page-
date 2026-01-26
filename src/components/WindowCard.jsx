@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion';
 
-const WindowCard = ({ children, title }) => {
+const WindowCard = ({ children, title, onClick }) => {
   return (
-    <div className="relative w-full h-full min-h-[300px] rounded-2xl overflow-hidden cursor-pointer group shadow-xl bg-slate-800 border border-slate-700">
+    <div 
+      onClick={onClick}
+      className="relative w-full h-full min-h-[300px] rounded-2xl overflow-hidden cursor-pointer group shadow-xl bg-slate-800 border border-slate-700"
+    >
       
       {/* --- CONTENIDO INTERNO (Lo que se ve al abrir) --- */}
       <div className="absolute inset-0 p-8 flex flex-col justify-center items-center text-center z-0">

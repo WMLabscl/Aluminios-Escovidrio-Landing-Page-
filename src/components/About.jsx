@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: Award,
       title: 'Experiencia',
-      description: 'Más de 15 años transformando espacios',
+      description: 'Más de 20 años transformando espacios',
     },
     {
       icon: Zap,
@@ -93,13 +93,10 @@ const About = () => {
               />
               {/* Floating Badge */}
               <motion.div
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.5 , type: 'spring' }}
+                
                 className="absolute bottom-4 left-4 md:bottom-8 md:left-8 glass-card p-6 border-primary/50 shadow-xl z-10"
               >
-                <div className="text-4xl font-bold text-primary">15+</div>
+                <div className="text-4xl font-bold text-primary">20+</div>
                 <div className="text-text-dark font-semibold">Años de</div>
                 <div className="text-text-gray">Experiencia</div>
               </motion.div>

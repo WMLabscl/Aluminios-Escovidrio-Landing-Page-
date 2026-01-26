@@ -13,7 +13,7 @@ const Footer = () => {
       icon: MapPin,
       title: 'Dirección',
       content: 'América 01135, San Bernardo, Chile',
-      link: 'https://maps.google.com/?q=América+01135+San+Bernardo+Chile',
+      link: 'https://www.google.com/maps/search/?api=1&query=América+01135,+San+Bernardo,+Chile',
     },
     {
       icon: Phone,
@@ -24,8 +24,8 @@ const Footer = () => {
     {
       icon: Mail,
       title: 'Email',
-      content: 'contacto@escovidrio.cl',
-      link: 'mailto:contacto@escovidrio.cl',
+      content: 'aluminios_escovidrio@live.cl',
+      link: 'mailto:aluminios_escovidrio@live.cl',
     },
     {
       icon: Clock,
@@ -62,21 +62,25 @@ const Footer = () => {
             <p className="text-text-gray mb-6 leading-relaxed">
               Soluciones profesionales en vidrio y aluminio para transformar tus espacios.
             </p>
+            {/* ... resto del código anterior ... */}
             <div className="flex gap-4">
+              {/* Botón de Facebook */}
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                href="https://facebook.com"
+                href="https://www.facebook.com/aluminiosraes?locale=es_LA" // <--- AQUÍ PUSE TU LINK
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors"
               >
                 <Facebook className="w-5 h-5 text-primary" />
               </motion.a>
+
+              {/* Botón de Instagram */}
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                href="https://instagram.com"
+                href="https://www.instagram.com/aluminiosescovidrio?igsh=d2t0YjJ0aW9md2N4" // <--- AQUÍ PUSE TU LINK
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors"
@@ -84,6 +88,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5 text-primary" />
               </motion.a>
             </div>
+            {/* ... resto del código ... */}
           </div>
 
           {/* Quick Links */}

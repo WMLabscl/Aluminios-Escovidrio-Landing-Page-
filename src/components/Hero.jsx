@@ -8,7 +8,7 @@ const Hero = () => {
 
   const stats = [
     { icon: Star, value: '500+', label: 'Instalaciones' },
-    { icon: Shield, value: '15+', label: 'Años' },
+    { icon: Shield, value: '20+', label: 'Años' },
     { icon: TrendingUp, value: '100%', label: 'Satisfacción' },
   ];
 
@@ -40,7 +40,7 @@ const Hero = () => {
             transition={{ delay: 0.2 }}
             className="inline-block px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary text-sm font-semibold mb-6"
           >
-            Soluciones Profesionales desde 2010
+            Soluciones Profesionales desde 2004
           </motion.span>
 
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
