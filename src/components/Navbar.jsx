@@ -35,7 +35,7 @@ const Navbar = () => {
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-lg border-b border-blue-200 shadow-lg'
+          ? 'bg-white/95 backdrop-blur-lg border-b border-slate-200 shadow-lg'
           : 'bg-white/80 backdrop-blur-sm'
       }`}
     >
@@ -48,14 +48,14 @@ const Navbar = () => {
             onClick={() => scrollToSection('#hero')}
           >
             <img 
-              src="/Imagenes/logo escovidrio solo ventana.webp" 
-              alt="Escovidrio Logo" 
+              src="/Imagenes/logo.webp" 
+              alt="Punto Glass Logo" 
               className="w-12 h-12 object-contain"
             />
             <div className="flex flex-col">
               <div className="text-2xl font-bold leading-tight">
-                <span className="text-slate-800">Esco</span>
-                <span className="text-slate-600"> Vidrio</span>
+                <span className="text-slate-800">Punto</span>
+                <span className="text-primary"> Glass</span>
               </div>
               <span className="text-xs text-text-gray">Vidrio & Aluminio</span>
             </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
           exit={{ opacity: 0, height: 0 }}
-          className="md:hidden bg-white/95 backdrop-blur-lg border-t border-blue-200"
+          className="md:hidden bg-white/95 backdrop-blur-lg border-t border-slate-200"
         >
           <div className="px-4 py-6 space-y-4">
             {menuItems.map((item) => (

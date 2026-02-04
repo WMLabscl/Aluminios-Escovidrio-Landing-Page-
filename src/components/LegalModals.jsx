@@ -55,7 +55,7 @@ const LegalModals = ({ isTermsOpen, isPrivacyOpen, onCloseTerms, onClosePrivacy 
                     </div>
                     <div>
                       <h2 className="text-xl md:text-2xl font-bold text-white">Términos y Condiciones</h2>
-                      <p className="text-gray-400 text-xs md:text-sm">ESCOVIDRIO - Vidrio & Aluminio</p>
+                      <p className="text-gray-400 text-xs md:text-sm">Punto Glass - Vidrio & Aluminio</p>
                     </div>
                   </div>
                   <button
@@ -103,7 +103,7 @@ const LegalModals = ({ isTermsOpen, isPrivacyOpen, onCloseTerms, onClosePrivacy 
                         despejar completamente la zona donde se realizará la instalación.
                       </p>
                       <p className="text-gray-300 leading-relaxed mb-3">
-                        • ESCOVIDRIO <strong className="text-white">no se responsabiliza por daños a muebles, objetos decorativos 
+                        • Punto Glass <strong className="text-white">no se responsabiliza por daños a muebles, objetos decorativos 
                         o elementos</strong> que no hayan sido retirados previamente del área de trabajo.
                       </p>
                       <p className="text-gray-300 leading-relaxed">
@@ -227,9 +227,9 @@ const LegalModals = ({ isTermsOpen, isPrivacyOpen, onCloseTerms, onClosePrivacy 
                 {/* Content */}
                 <div className="flex-1 overflow-y-auto p-4 md:p-6 space-y-4 md:space-y-6">
                   <div className="prose prose-invert max-w-none">
-                    <div className="bg-blue-900/20 border border-blue-700/50 rounded-lg p-3 md:p-4 mb-4 md:mb-6">
-                      <p className="text-blue-200 text-sm leading-relaxed">
-                        <strong>ESCOVIDRIO</strong> cumple con la <strong>Ley 19.628 sobre Protección de la Vida Privada</strong> 
+                    <div className="bg-orange-900/20 border border-orange-700/50 rounded-lg p-3 md:p-4 mb-4 md:mb-6">
+                      <p className="text-orange-200 text-sm leading-relaxed">
+                        <strong>Punto Glass</strong> cumple con la <strong>Ley 19.628 sobre Protección de la Vida Privada</strong> 
                         de Chile y se compromete a proteger sus datos personales.
                       </p>
                     </div>
@@ -274,7 +274,7 @@ const LegalModals = ({ isTermsOpen, isPrivacyOpen, onCloseTerms, onClosePrivacy 
                       <div className="bg-green-900/20 border border-green-700/50 rounded-lg p-4">
                         <p className="text-green-300 leading-relaxed">
                           <strong>✓ NO compartimos ni vendemos sus datos personales a terceros.</strong> Su información 
-                          permanece confidencial y es de uso exclusivo de ESCOVIDRIO para fines comerciales relacionados 
+                          permanece confidencial y es de uso exclusivo de Punto Glass para fines comerciales relacionados 
                           con su proyecto.
                         </p>
                       </div>
@@ -297,8 +297,8 @@ const LegalModals = ({ isTermsOpen, isPrivacyOpen, onCloseTerms, onClosePrivacy 
                       <div className="mt-4 bg-slate-800/50 border border-slate-700 rounded-lg p-4">
                         <p className="text-gray-300 text-sm leading-relaxed">
                           Para ejercer estos derechos, puede contactarnos a través de WhatsApp al 
-                          <a href="tel:+56953215308" className="text-primary font-semibold hover:underline ml-1">
-                            +56 9 5321 5308
+                          <a href="tel:+56912345678" className="text-primary font-semibold hover:underline ml-1">
+                            +56 9 1234 5678
                           </a> o escribirnos directamente.
                         </p>
                       </div>
@@ -324,8 +324,8 @@ const LegalModals = ({ isTermsOpen, isPrivacyOpen, onCloseTerms, onClosePrivacy 
                         Si tiene preguntas sobre esta política de privacidad, puede contactarnos:
                       </p>
                       <div className="mt-3 space-y-2 text-gray-300">
-                        <p>• WhatsApp: <a href="tel:+56953215308" className="text-primary hover:underline">+56 9 5321 5308</a></p>
-                        <p>• Dirección: América 01135, San Bernardo, Chile</p>
+                        <p>• WhatsApp: <a href="tel:+56912345678" className="text-primary hover:underline">+56 9 1234 5678</a></p>
+                        <p>• Dirección: San Bernardo, Región Metropolitana, Chile</p>
                       </div>
                     </section>
                   </div>

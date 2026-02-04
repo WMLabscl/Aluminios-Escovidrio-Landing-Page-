@@ -44,12 +44,12 @@ const About = () => {
               <span className="gradient-text"> Vidrio & Aluminio</span>
             </h2>
             <p className="text-text-gray text-lg mb-6 leading-relaxed">
-              En <span className="text-blue font-semibold">ESCOVIDRIO</span>, 
-              llevamos más de una década creando soluciones innovadoras que combinan 
+              En <span className="text-primary font-semibold">Punto Glass</span>, 
+              creamos soluciones innovadoras que combinan 
               funcionalidad, diseño y durabilidad.
             </p>
             <p className="text-text-gray text-lg mb-8 leading-relaxed">
-              Ubicados en San Bernardo, atendemos a clientes residenciales y comerciales 
+              Ubicados en Lampa, atendemos a clientes residenciales y comerciales 
               con el compromiso de superar sus expectativas en cada proyecto. Nuestro equipo 
               de especialistas se encarga de todo, desde el diseño hasta la instalación.
             </p>
@@ -87,8 +87,8 @@ const About = () => {
           >
             <div className="glass-card p-4 overflow-visible relative">
               <img
-                src="/Imagenes/Cierre de negocio.webp"
-                alt="Cierre de negocio ESCOVIDRIO"
+                src="/Imagenes/logo.webp"
+                alt="Proyectos Punto Glass"
                 className="w-full h-[500px] object-cover rounded-xl"
               />
               {/* Floating Badge */}
@@ -103,7 +103,7 @@ const About = () => {
             </div>
 
             {/* Decorative Elements */}
-            <div className="absolute -z-10 top-1/2 right-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+            <div className="absolute -z-10 top-1/2 right-0 w-72 h-72 bg-orange-500/10 rounded-full blur-3xl"></div>
           </motion.div>
         </div>
       </div>

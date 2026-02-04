@@ -44,7 +44,7 @@ const WhatsAppForm = () => {
     const servicesText = formData.selectedServices.join(', ');
     const detailsText = formData.message.trim() || 'Sin detalles adicionales';
     
-    const whatsappMessage = `Hola ESCOVIDRIO, soy *${formData.name}*.%0A%0AMe interesa cotizar:%0A📋 ${servicesText}%0A%0ADetalles:%0A${detailsText}`;
+    const whatsappMessage = `Hola Punto Glass, soy *${formData.name}*.%0A%0AMe interesa cotizar:%0A📋 ${servicesText}%0A%0ADetalles:%0A${detailsText}`;
     
     const whatsappURL = `https://wa.me/56953215308?text=${whatsappMessage}`;
 

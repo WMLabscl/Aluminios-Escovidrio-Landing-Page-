@@ -1,6 +1,6 @@
-# ESCOVIDRIO - Landing Page
+# Punto Glass - Landing Page
 
-Landing page profesional para ESCOVIDRIO, empresa especializada en soluciones de vidrio y aluminio en San Bernardo, Chile.
+Landing page profesional para Punto Glass, empresa especializada en soluciones de vidrio y aluminio en San Bernardo, Chile.
 
 ## 🚀 Stack Tecnológico
 
@@ -38,7 +38,7 @@ npm run preview
 ## 📁 Estructura del Proyecto
 
 ```
-proyecto-escovidrio/
+punto-glass-mvp/
 ├── public/
 │   ├── robots.txt
 │   └── sitemap.xml
@@ -61,17 +61,18 @@ proyecto-escovidrio/
 
 ## 🎨 Paleta de Colores
 
-- **Primary**: `#0084ff` (Azul Eléctrico)
-- **Dark Background**: `#0f172a` (Slate 900)
-- **Dark Card**: `#1e293b` (Slate 800)
-- **Text Gray**: `#94a3b8`
+- **Primary**: `#10b981` (Verde Esmeralda)
+- **Light Background**: `#f8fafc` (Slate 50)
+- **Light Card**: `#f1f5f9` (Slate 100)
+- **Text Dark**: `#334155`
+- **Text Gray**: `#64748b`
 
 ## 📞 Información de Contacto
 
-- **Empresa**: ESCOVIDRIO
-- **Ubicación**: América 01135, San Bernardo, Chile
-- **WhatsApp**: +56 9 5321 5308
-- **Email**: contacto@escovidrio.cl
+- **Empresa**: Punto Glass
+- **Ubicación**: San Bernardo, Región Metropolitana, Chile
+- **WhatsApp**: +56 9 1234 5678 (actualizar con número real)
+- **Email**: contacto@puntoglass.cl (actualizar con email real)
 
 ## 🌟 Servicios
 
@@ -103,4 +104,4 @@ Simplemente ejecuta `npm run build` y sube la carpeta `dist/`.
 
 ## 📄 Licencia
 
-© 2026 ESCOVIDRIO. Todos los derechos reservados.
+© 2026 Punto Glass. Todos los derechos reservados.

@@ -5,15 +5,15 @@ const SEO = () => {
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "ESCOVIDRIO",
+      "name": "Punto Glass",
       "description": "Soluciones profesionales en vidrio y aluminio en San Bernardo, Chile. Ventanas, mamparas, terrazas y más.",
-      "image": "https://escovidrio.cl/logo.png",
-      "@id": "https://escovidrio.cl",
-      "url": "https://escovidrio.cl",
-      "telephone": "+56953215308",
+      "image": "https://puntoglass.cl/logo.png",
+      "@id": "https://puntoglass.cl",
+      "url": "https://puntoglass.cl",
+      "telephone": "+56912345678",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "América 01135",
+        "streetAddress": "San Bernardo",
         "addressLocality": "San Bernardo",
         "addressRegion": "Región Metropolitana",
         "postalCode": "8050000",
@@ -37,8 +37,8 @@ const SEO = () => {
         "closes": "18:00"
       },
       "sameAs": [
-        "https://www.facebook.com/escovidrio",
-        "https://www.instagram.com/escovidrio"
+        "https://www.facebook.com/puntoglass",
+        "https://www.instagram.com/puntoglass"
       ],
       "priceRange": "$$",
       "areaServed": {

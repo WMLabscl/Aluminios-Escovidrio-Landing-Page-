@@ -10,8 +10,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f0f7ff;
-  color: #1e3a5f;
+  background-color: #f8fafc;
+  color: #0f172a;
   overflow-x: hidden;
 }
 
@@ -25,22 +25,22 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #e3f2fd;
+  background: #f1f5f9;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0084ff;
+  background: #f97316;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0066cc;
+  background: #ea580c;
 }
 
 /* Glassmorphism utilities */
 @layer components {
   .glass-card {
-    @apply bg-white/80 backdrop-blur-lg border border-blue-200 rounded-2xl transition-all duration-300 shadow-sm;
+    @apply bg-white/80 backdrop-blur-lg border border-slate-200 rounded-2xl transition-all duration-300 shadow-sm;
   }
   
   .glass-card:hover {
@@ -52,7 +52,7 @@ html {
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-primary via-blue-500 to-cyan-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-text-dark via-primary to-orange-600 bg-clip-text text-transparent;
   }
 }
 
@@ -132,7 +132,7 @@ html {
   position: absolute;
   top: 15px; /* Dejar espacio para rieles */
   bottom: 15px;
-  width: 50vw;
+  width: 51vw; /* 51% para que se superpongan ligeramente en el medio */
   background: rgba(255, 255, 255, 0.1); /* Base transparente */
   backdrop-filter: blur(15px); /* El efecto "Empavonado" clave */
   -webkit-backdrop-filter: blur(15px);
@@ -143,6 +143,7 @@ html {
 
 .panel-left {
   left: 0;
+  transform: translateX(0); /* Empieza desde la izquierda cubriendo hasta el 50% */
   /* Animación: Espera 0.8s, luego abre en 1.5s */
   animation: slideOpenLeft 1.5s cubic-bezier(0.25, 1, 0.5, 1) 0.8s forwards;
   border-right: 1px solid rgba(255,255,255,0.3);
@@ -150,6 +151,7 @@ html {
 
 .panel-right {
   right: 0;
+  transform: translateX(0); /* Empieza desde la derecha cubriendo desde el 50% */
   /* Animación: Espera 0.8s, luego abre en 1.5s */
   animation: slideOpenRight 1.5s cubic-bezier(0.25, 1, 0.5, 1) 0.8s forwards;
   border-left: 1px solid rgba(255,255,255,0.3);
@@ -211,12 +213,12 @@ html {
 /* --- ANIMACIONES KEYFRAMES --- */
 
 @keyframes slideOpenLeft {
-  0% { transform: translateX(0); }
+  0% { transform: translateX(0); opacity: 1; }
   100% { transform: translateX(-100%); opacity: 0; }
 }
 
 @keyframes slideOpenRight {
-  0% { transform: translateX(0); }
+  0% { transform: translateX(0); opacity: 1; }
   100% { transform: translateX(100%); opacity: 0; }
 }
 
@@ -231,3 +233,56 @@ html {
   .aluminum-frame { width: 8px; }
   .door-handle { width: 8px; height: 60px; }
 }
+
+/* --- HERO PREMIUM STYLES --- */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
+  text-stroke: 1px rgba(255, 255, 255, 0.8);
+}
+
+.text-outline-thick {
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.9);
+  text-stroke: 2px rgba(255, 255, 255, 0.9);
+}
+
+.glass-premium {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(249, 115, 22, 0.15);
+}
+
+.reveal-text {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  animation: reveal 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes reveal {
+  0% { transform: translateY(100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.vertical-line {
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.1) 80%, transparent);
+}
+
+.scroll-indicator {
+  animation: scrollBounce 2s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+.hero-bg-overlay {
+  background: linear-gradient(
+    rgba(15, 23, 42, 0.88), 
+    rgba(15, 23, 42, 0.85)
+  );
+}
+

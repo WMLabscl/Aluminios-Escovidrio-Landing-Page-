@@ -233,13 +233,13 @@ const Services = () => {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Floating Crystal Shapes */}
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-lg blur-2xl crystal-float" style={{animationDelay: '0s'}}></div>
-        <div className="absolute top-40 right-20 w-40 h-40 bg-cyan-400/10 rounded-lg blur-2xl crystal-float" style={{animationDelay: '2s'}}></div>
-        <div className="absolute bottom-32 left-1/4 w-36 h-36 bg-blue-400/10 rounded-lg blur-2xl crystal-float" style={{animationDelay: '4s'}}></div>
+        <div className="absolute top-40 right-20 w-40 h-40 bg-orange-400/10 rounded-lg blur-2xl crystal-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute bottom-32 left-1/4 w-36 h-36 bg-amber-400/10 rounded-lg blur-2xl crystal-float" style={{animationDelay: '4s'}}></div>
         <div className="absolute bottom-20 right-1/3 w-28 h-28 bg-primary/10 rounded-lg blur-2xl crystal-float" style={{animationDelay: '6s'}}></div>
         
         {/* Grid Pattern */}
         <div className="absolute inset-0 opacity-5" style={{
-          backgroundImage: 'linear-gradient(rgba(0, 132, 255, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 132, 255, 0.3) 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(rgba(249, 115, 22, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(249, 115, 22, 0.3) 1px, transparent 1px)',
           backgroundSize: '50px 50px'
         }}></div>
         

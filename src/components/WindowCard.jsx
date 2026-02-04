@@ -21,7 +21,7 @@ const WindowCard = ({ children, title, onClick }) => {
         transition={{ type: "spring", stiffness: 120, damping: 20, delay: 0.2 }}
       >
         {/* Marco de Aluminio */}
-        <div className="w-full h-full bg-blue-50/10 backdrop-blur-md border-r-4 border-gray-400/50 relative overflow-hidden">
+        <div className="w-full h-full bg-slate-100/10 backdrop-blur-md border-r-4 border-gray-400/50 relative overflow-hidden">
            {/* Reflejo del vidrio */}
            <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent pointer-events-none"></div>
            {/* Manilla (Handle) */}
@@ -38,7 +38,7 @@ const WindowCard = ({ children, title, onClick }) => {
         transition={{ type: "spring", stiffness: 120, damping: 20, delay: 0.2 }}
       >
         {/* Marco de Aluminio */}
-        <div className="w-full h-full bg-blue-50/10 backdrop-blur-md border-l-4 border-gray-400/50 relative overflow-hidden">
+        <div className="w-full h-full bg-slate-100/10 backdrop-blur-md border-l-4 border-gray-400/50 relative overflow-hidden">
            {/* Reflejo del vidrio */}
            <div className="absolute inset-0 bg-gradient-to-bl from-white/5 to-transparent pointer-events-none"></div>
            {/* Manilla (Handle) */}

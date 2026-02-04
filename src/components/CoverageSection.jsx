@@ -21,14 +21,10 @@ const CoverageSection = () => {
       title: 'Instalación Profesional en Terreno',
       description: 'Servicio llave en mano. Llegamos, instalamos y garantizamos el resultado'
     },
-    {
-      icon: MapPin,
-      title: 'Cobertura Total en Santiago',
-      description: 'San Bernardo, Buin, Santiago Centro, Las Condes y toda la Región Metropolitana'
-    }
   ];
 
   const locations = [
+    'Lampa',
     'San Bernardo',
     'Buin',
     'Santiago Centro',
@@ -59,7 +55,7 @@ const CoverageSection = () => {
 
       {/* Animated Background Elements */}
       <div className="absolute top-1/4 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl crystal-float" style={{animationDelay: '0s'}}></div>
-      <div className="absolute bottom-1/4 right-10 w-72 h-72 bg-cyan-400/10 rounded-full blur-3xl crystal-float" style={{animationDelay: '3s'}}></div>
+      <div className="absolute bottom-1/4 right-10 w-72 h-72 bg-orange-400/10 rounded-full blur-3xl crystal-float" style={{animationDelay: '3s'}}></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -254,7 +250,7 @@ const CoverageSection = () => {
               {/* Glass Container for Map */}
               <div className="glass-card bg-slate-800/30 border-slate-700 p-3 h-full">
                 {/* Floating Badge */}
-                <div className="absolute top-6 left-6 z-20 bg-gradient-to-r from-primary to-blue-500 text-white px-4 py-2 rounded-full flex items-center gap-2 shadow-2xl">
+                <div className="absolute top-6 left-6 z-20 bg-gradient-to-r from-primary to-orange-600 text-white px-4 py-2 rounded-full flex items-center gap-2 shadow-2xl">
                   <MapPin className="w-4 h-4" />
                   <span className="text-sm font-semibold">Base en San Bernardo</span>
                 </div>
@@ -269,7 +265,7 @@ const CoverageSection = () => {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="rounded-xl"
-                  title="Ubicación ESCOVIDRIO - San Bernardo"
+                  title="Ubicación Punto Glass - San Bernardo"
                 ></iframe>
               </div>
             </motion.div>
